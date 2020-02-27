@@ -11,29 +11,29 @@ function getOptions(direction) {
         case 'left':
             return {
                 rotate: 0,
-                skew: 30,
-                degree: -30
+                skew: 22,
+                degree: -22
             }
         break
         case 'right':
             return {
                 rotate: 0,
-                skew: -30,
-                degree: 30
+                skew: -22,
+                degree: 22
             }
         break
         case 'top-left':
             return {
                 rotate: 0,
-                skew: -30,
-                degree: -30
+                skew: -22,
+                degree: -22
             }
         break
         case 'top-right':
             return {
                 rotate: 90,
-                skew: -30,
-                degree: 30
+                skew: -22,
+                degree: 22
             }
         break
         default:

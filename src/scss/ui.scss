@@ -102,13 +102,13 @@
                 border: 1px dashed var(--border);
             }
             &.left {
-                --s: -30deg;
+                --s: -22deg;
                 --r: 90deg;
                 --x: 68px;
                 --y: -113px;
             }
             &.top {
-                --s: -30deg;
+                --s: -22deg;
                 --r: 210deg;
                 --x: -199px;
                 --y: -59px;
@@ -188,8 +188,8 @@
                 }
             }
             &.right {
-                --s: -30deg;
-                --r: -30deg;
+                --s: -22deg;
+                --r: -22deg;
                 --x: 130px;
                 --y: 172px;
             }
