@@ -55,13 +55,20 @@ function setIsomentric(node, direction) {
         ),
         x = node.x,
         y = node.y
-
-    node.relativeTransform = [
+    //some easy hack to make it
+    //0.707,0.353,-0.707,0.353,0,0 means 45 rotation and 1/2 Y-press
+    if(direction=='top-right' || direction=='top-left'){
+      node.relativeTransform = [
+        [ 0.707,  0.353, 0],
+        [-0.707,  0.353, 0]
+      ] 
+    }else{
+      node.relativeTransform = [
         [matrix.a, matrix.b, matrix.e],
         [matrix.c, matrix.d, matrix.f]
-    ]
-    node.rotation = options.degree
-
+      ]
+      node.rotation = options.degree
+    }
     node.x = x
     node.y = y
 
